@@ -1,0 +1,210 @@
+.custom-card {
+    max-width: 300px; /* Menetapkan lebar maksimum untuk kartu */
+    margin: 0 auto; /* Memusatkan kartu secara horizontal */
+}
+
+.card {
+    border: 1px solid #ddd; /* Garis tepi untuk kartu */
+    border-radius: 5px; /* Sudut melengkung */
+    overflow: hidden; /* Mengatur overflow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card:hover .card-img {
+    transform: scale(1.1);
+}
+.card-img-top {
+    width: 50%; /* Lebar penuh untuk gambar */
+    height: 10px; /* Memastikan proporsi gambar tetap terjaga */
+}
+
+.card-title {
+    color: rgb(20, 19, 19); /* Warna teks */
+    font-size: 20px; /* Ukuran font */
+    font-weight: bold; /* Ketebalan font */
+    text-align: center; /* Posisi teks */
+    margin-bottom: 10px; /* Jarak bawah dari elemen lain */
+}
+
+.card-text {
+    font-size: 1rem; /* Ukuran font untuk teks kartu */
+    color: #555; /* Warna teks */
+}
+       
+.title-box {
+    margin-bottom: 30px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: var(--dark-color); /* Use a CSS variable for consistency */
+    padding: 30px 0; /* Added padding for better spacing */
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 2rem;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text inside container */
+}
+
+.footer__title {
+    font-size: 1.2rem; /* Adjusted font size for better readability */
+    color: var(--white-color);
+    margin-bottom: 1rem; /* Adjusted margin for consistency */
+}
+
+.footer__link {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.footer__link:hover {
+    color: var(--first-color); /* Use a CSS variable for the hover color */
+}
+
+.footer__social {
+    font-size: 1.4rem;
+    margin-right: 1rem; /* Adjusted margin for better spacing */
+    color: var(--white-color); /* Added default color */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.footer__social:hover {
+    color: var(--first-color); /* Use a CSS variable for the hover color */
+}
+
+.footer__data img {
+    width: 200px; /* Adjust the width as needed */
+}
+      
+section {
+    margin-top: 120px; /* Adjust based on the navbar height */
+    padding: 20px; /* Optional: add some padding for better presentation */
+}
+
+.navbar {
+    height: 80px; /* Increase the height as needed */
+    padding-top: 20px; /* Adjust padding to center content vertically */
+    padding-bottom: 20px; /* Adjust padding to center content vertically */
+}
+
+
+
+
+/* style.css */
+
+/* Styles for modal */
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    background-color: #3C5B6F;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    display: flex;
+    align-items: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.modal-body p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.close {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.about-section {
+    background-image: url('https://cdn.pixabay.com/photo/2014/08/15/11/29/beach-418742_1280.jpg'); /* Ganti dengan URL gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+.about-section h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    color: white;
+}
+.about-section p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/*title section*/
+.title-section {
+    padding: 50px 0;
+}
+
+.title-box {
+    margin-bottom: 30px;
+}
+
+.title-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.title-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.title-box i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}

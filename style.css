@@ -1,0 +1,183 @@
+body {
+    background-color: #153448;
+    color: white;
+}
+
+
+.product-background {
+    background-color: #153448; 
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: var(--dark-color); /* Use a CSS variable for consistency */
+    padding: 30px 0; /* Added padding for better spacing */
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 2rem;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text inside container */
+
+}
+
+.footer__title {
+    font-size: 1.2rem; /* Adjusted font size for better readability */
+    color: var(--white-color);
+    margin-bottom: 1rem; /* Adjusted margin for consistency */
+}
+
+.footer__link {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.footer__link:hover {
+    color: var(--first-color); /* Use a CSS variable for the hover color */
+}
+
+.footer__social {
+    font-size: 1.4rem;
+    margin-right: 1rem; /* Adjusted margin for better spacing */
+    color: var(--white-color); /* Added default color */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.footer__social:hover {
+    color: var(--first-color); /* Use a CSS variable for the hover color */
+}
+
+
+/* Navbar */
+.navbar {
+    height: 80px; /* Increase the height as needed */
+    padding-top: 20px; /* Adjust padding to center content vertically */
+    padding-bottom: 20px; /* Adjust padding to center content vertically */
+    
+}
+
+
+
+.btn-transparent-sm {
+    background-color: transparent;
+    color: #3C5B6F; /* Text color */
+    border: 2px solid #3C5B6F; /* Border color */
+    padding: 8px 16px; /* Adjust padding to make the button smaller */
+    font-size: 14px; /* Reduce font size */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-transparent-sm:hover {
+    background-color: #3C5B6F; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.btn-transparent-sm a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the button */
+}
+
+.btn-light {
+    background-color: #3C5B6F; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 20px; /* Rounded corners */
+    text-decoration: none; /* Remove default underline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: all 0.3s ease; /* Transition for smooth animation */
+    display: inline-block; /* Display as inline-block to respect padding and margin */
+}
+
+.btn-light:hover {
+    background-color: #294052; /* Darker shade on hover */
+    color: white; /* Text color on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    transform: translateY(-2px); /* Move button 2px up on hover */
+}
+
+.image-text-section {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    align-items: center; /* Memusatkan vertikal konten dalam container */
+    padding: 40px 0; /* Padding atas dan bawah untuk ruang di sekitar konten */
+    margin-top: 20px;
+    }
+
+    .image-text-section img {
+            max-width: 100%; /* Gambar agar tidak melebihi lebar container */
+            height: auto; /* Memastikan proporsi gambar tetap terjaga */
+            max-height: 600px; /* Sesuaikan tinggi maksimal gambar sesuai kebutuhan Anda */
+            object-fit: cover; /* Menjaga proporsi gambar */
+            border-radius: 5%; /* Membuat sudut gambar melengkung */
+            margin-bottom: 20px; /* Jarak bawah antara gambar dan teks */
+    }
+
+    .image-text-section .text-content {
+    flex: 1; /* Menggunakan flex untuk merentangkan teks sejajar dengan gambar */
+    }
+
+    .text-content {
+    text-align: left; /* Arahkan teks ke kiri */
+    }
+
+    .text-content h2 {
+    margin-top: 0; /* Hapus margin atas pada judul */
+    }
+
+    .card-img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    }
+
+    .card-body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    height: 50px;
+    
+    
+    }   
+
+    .card-section {
+    margin-bottom: 100px; /* Adjusted margin to create space for the footer */
+    }
+
+    .image-text-section .col-md-6 {
+    padding-bottom: 20px; /* Atur padding bawah untuk menjaga jarak antara kolom */
+}
+
+.card-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card:hover .card-img {
+    transform: scale(1.1);
+}
+
+
+
